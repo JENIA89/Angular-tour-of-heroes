@@ -1,3 +1,7 @@
+.hero-add {
+  margin: 30px 0;
+}
+
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -47,4 +51,37 @@
   text-align: right;
   margin-right: 0.8em;
   border-radius: 4px 0 0 4px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: #cfd8dc;
+  border-radius: 4px;
+  height: 20px;
+  width: 150px;
+}
+.delete {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #607d8b;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.add {
+  font-family: Arial;
+  margin-left: 10px;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.add:hover {
+  background-color: #cfd8dc;
 }
