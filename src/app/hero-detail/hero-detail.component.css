@@ -7,10 +7,14 @@ label {
 }
 
 input {
-  height: 2em;
+  height: 1em;
   font-size: 1em;
   padding-left: 0.4em;
+  border: none;
   outline: none;
+  background-color: #cfd8dc;
+  border-radius: 4px;
+  height: 20px;
 }
 
 button {
