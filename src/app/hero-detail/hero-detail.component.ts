@@ -11,6 +11,8 @@ import { HeroService } from '../hero.service';
 })
 export class HeroDetailComponent implements OnInit {
   hero: Hero
+  isLoading=false
+
   constructor(
     private route: ActivatedRoute,
     private heroService: HeroService,
@@ -22,9 +24,12 @@ export class HeroDetailComponent implements OnInit {
   }
 
   getHero(): void{
+    this.isLoading=true
     const id = +this.route.snapshot.paramMap.get('id');
     this.heroService.getHero(id)
-    .subscribe(hero=> this.hero = hero)
+    .subscribe(hero=> {
+      this.isLoading=false
+      this.hero = hero})
   }
 
   save():void{

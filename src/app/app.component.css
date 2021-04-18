@@ -1,10 +1,3 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   margin: 2em;
 }
@@ -16,6 +9,9 @@ button {
   font-family: Cambria, Georgia;
 }
 
+.main {
+  margin: 0 10px;
+}
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;

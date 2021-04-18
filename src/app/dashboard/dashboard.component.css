@@ -54,6 +54,11 @@ h3 {
   padding-right: 10px;
 }
 
+.spin {
+  text-align: center;
+  margin: 20px 0;
+}
+
 @media (max-width: 1024px) {
   .grid {
     margin: 0;

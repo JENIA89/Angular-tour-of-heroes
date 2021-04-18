@@ -10,7 +10,8 @@ import { Hero } from '../hero';
 export class HeroesComponent implements OnInit {
 
   heroes: Hero[];
- 
+  isLoading=false
+
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
@@ -18,8 +19,11 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void{
+    this.isLoading=true
     this.heroService.getHeroes()
-    .subscribe(heroes=>this.heroes = heroes)
+    .subscribe(heroes=>{
+      this.isLoading=false
+      this.heroes = heroes})
   }
 
   add(name: string): void{

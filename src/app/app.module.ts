@@ -1,3 +1,5 @@
+import { NzDemoSpinBasicComponent } from './spinner/NzDemoSpinBasicComponent.component';
+
 import { InMemoryDataService } from './in-memory-data.service';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,8 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { SpinnerComponent } from './spinner/spinner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 
 @NgModule({
@@ -24,7 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    SpinnerComponent
+    NzDemoSpinBasicComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false}
     ),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzSpinModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

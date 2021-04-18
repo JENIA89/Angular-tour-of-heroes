@@ -7,7 +7,9 @@
         Add
     </button>
 </div>
-
+<div class='spin'>
+    <nz-demo-spin-basic *ngIf='isLoading' [nzSize]='large'></nz-demo-spin-basic>
+</div>
 <ul class='heroes'>
     <li *ngFor='let hero of heroes'>
     <a routerLink='/detail/{{hero.id}}'>

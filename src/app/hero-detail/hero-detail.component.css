@@ -37,3 +37,8 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 }
+
+.spin {
+  text-align: center;
+  margin: 20px 0;
+}
