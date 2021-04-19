@@ -6,9 +6,12 @@
     <button (click)='add(heroName.value); heroName.value=""' class='add'>
         Add
     </button>
+    
+    <nz-demo-button-basic  [type]="'primary'">Add</nz-demo-button-basic>
+    
 </div>
 <div class='spin'>
-    <nz-demo-spin-basic *ngIf='isLoading' [nzSize]='large'></nz-demo-spin-basic>
+    <nz-demo-spin-basic *ngIf='isLoading'></nz-demo-spin-basic>
 </div>
 <ul class='heroes'>
     <li *ngFor='let hero of heroes'>
