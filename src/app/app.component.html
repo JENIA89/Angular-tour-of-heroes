@@ -1,10 +1,26 @@
-<div class='main'>
+<!-- <div class='main'>
     <h1>{{title}}</h1>
 <nav>
-    <a routerLink='/heroes'>Heroes</a>
-    <a routerLink='/dashboard'>Dashboard</a>
-    <nz-demo-button-basic routerLink='/dashboard'  [type]="'link'">Dashboard</nz-demo-button-basic>
+    <a routerLink='/heroes' nz-button  nzType="link">Heroes</a>
+    <a routerLink='/dashboard' nz-button  nzType="link">Dashboard</a>
 </nav>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
-</div>
+</div> -->
+
+<nz-layout>
+    <nz-header>
+        <h1>{{title}}</h1>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+                <li nz-menu-item><a routerLink='/heroes' nz-button  nzType="link">>Heroes</a></li>
+                <li nz-menu-item><a routerLink='/dashboard' nz-button  nzType="link">Dashboard</a></li>
+ 
+          </ul>
+    </nz-header>
+    <nz-layout>
+      <nz-sider>left sidebar</nz-sider>
+      <nz-content>main content</nz-content>
+      <nz-sider>right sidebar</nz-sider>
+    </nz-layout>
+    <nz-footer>footer</nz-footer>
+  </nz-layout>

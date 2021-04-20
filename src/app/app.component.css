@@ -30,24 +30,43 @@ nav {
 }
 
 nav a {
-  padding: 5px 10px;
-  text-decoration: none;
   margin: 10px;
-  display: inline-block;
-  background-color: #eee;
   border-radius: 4px;
 }
 
-nav a:visited,
-a:link {
-  color: #607d8b;
+:host {
+  text-align: center;
 }
 
-nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
+nz-header {
+  background: #11268a;
+}
+nz-footer {
+  background: #7dbcea;
+  color: #fff;
 }
 
-nav a:active {
-  color: #039be5;
+nz-footer {
+  line-height: 1.5;
+}
+
+nz-sider {
+  background: #3ba0e9;
+  color: #fff;
+  line-height: 120px;
+}
+
+nz-content {
+  background: rgba(16, 142, 233, 1);
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
+nz-layout:last-child {
+  margin: 0;
 }

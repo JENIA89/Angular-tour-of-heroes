@@ -2,10 +2,10 @@
     <nz-demo-spin-basic *ngIf='isLoading'></nz-demo-spin-basic>
 </div>
 <div class='grid grid-pad'>
-    <a *ngFor='let hero of heroes' class='col-1-4' routerLink='/detail/{{hero.id}}'>
+    <a *ngFor='let hero of heroes' class='col-1-4' routerLink='/detail/{{hero.id}}' nz-button  nzType="link">
         <div class='module hero'>
             <h4>{{hero.name}}</h4>
         </div>
     </a>
 </div>
-<!-- <app-hero-search></app-hero-search> -->
+<app-hero-search></app-hero-search>

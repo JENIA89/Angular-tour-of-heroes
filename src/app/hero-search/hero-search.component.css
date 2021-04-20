@@ -1,9 +1,5 @@
 input {
-  border: none;
-  outline: none;
-  background-color: #cfd8dc;
-  border-radius: 4px;
-  height: 20px;
+  width: 11.5em;
 }
 
 .search-result li {
@@ -33,10 +29,10 @@ input {
   color: #fff;
 }
 
-#searchBox {
+/* #searchBox {
   width: 165px;
   height: 20px;
-}
+} */
 
 ul.search-result {
   margin-top: 0;

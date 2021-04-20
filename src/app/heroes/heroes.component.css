@@ -3,7 +3,8 @@
 }
 
 .hero-add input {
-  outline: none;
+  width: 11.5em;
+  margin-right: 10px;
 }
 
 .heroes {
@@ -57,7 +58,12 @@
   border-radius: 4px 0 0 4px;
 }
 
-button {
+.delete {
+  position: relative;
+  left: 194px;
+  top: -34px;
+  background-color: gray !important;
+  color: white;
   background-color: #eee;
   border: none;
   padding: 5px 10px;
@@ -65,16 +71,4 @@ button {
   cursor: pointer;
   cursor: hand;
   font-family: Arial;
-}
-
-button:hover {
-  background-color: #cfd8dc;
-}
-
-button.delete {
-  position: relative;
-  left: 194px;
-  top: -34px;
-  background-color: gray !important;
-  color: white;
 }

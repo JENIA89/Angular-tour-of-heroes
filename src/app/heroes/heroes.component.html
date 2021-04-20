@@ -1,14 +1,11 @@
 <h2>My Heroes</h2>
 <div class='hero-add'>
     <label>Hero name:
-        <input #heroName/>
+        <input #heroName nz-input/>
     </label>
-    <button (click)='add(heroName.value); heroName.value=""' class='add'>
+    <button (click)='add(heroName.value); heroName.value=""' nz-button nzType="primary">
         Add
-    </button>
-    
-    <nz-demo-button-basic  [type]="'primary'">Add</nz-demo-button-basic>
-    
+    </button>  
 </div>
 <div class='spin'>
     <nz-demo-spin-basic *ngIf='isLoading'></nz-demo-spin-basic>
