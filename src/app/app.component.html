@@ -1,62 +1,24 @@
-<!-- <div class='main'>
-    <h1>{{title}}</h1>
-<nav>
-    <a routerLink='/heroes' nz-button  nzType="link">Heroes</a>
-    <a routerLink='/dashboard' nz-button  nzType="link">Dashboard</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
-</div> -->
-
-<!-- <nz-layout>
-    <nz-header> -->
-        <!-- <h1>{{title}}</h1>
-        <ul nz-menu nzTheme="dark" nzMode="horizontal">
-                <li nz-menu-item><a routerLink='/heroes' nz-button  nzType="link">Heroes</a></li>
-                <li nz-menu-item><a routerLink='/dashboard' nz-button  nzType="link">Dashboard</a></li>
-          </ul> -->
-         <!-- <div class="header">
-           <div>
-            <h1 class="logo">{{title}}</h1>
-           </div>
-          <nav>
-            <ul nz-menu nzTheme="dark" nzMode="horizontal">
-              <li nz-menu-item>nav 1</li>
-              <li nz-menu-item>nav 2</li>
-              <li nz-menu-item>nav 3</li>
-          </ul>
-         </nav>
-      </div>
-    </nz-header> -->
-    <!-- <nz-layout>
-      <nz-sider>left sidebar</nz-sider>
-      <nz-content>main content</nz-content>
-      <nz-sider>right sidebar</nz-sider>
-    </nz-layout>
-    <nz-footer>footer</nz-footer> -->
-  <!-- </nz-layout> -->
-
-  <nz-layout>
-    <nz-header>
-      <div class="header">
-        <div class="logo">
+<nz-layout>
+  <nz-header>
+    <div class="header">
+      <div class="logo">
           {{title}}
-        </div>
-        <nav class="nav">
-          <ul nzMode="horizontal">
-            <li nz-menu-item><a routerLink='/heroes'  nzType="link">Heroes</a></li>
-            <li nz-menu-item><a routerLink='/dashboard'   nzType="link">Dashboard</a></li>
-          </ul>
+      </div>
+      <nav class="nav">
+        <ul nzMode="horizontal">
+          <li nz-menu-item><a routerLink='/heroes'  nzType="link">Heroes</a></li>
+          <li nz-menu-item><a routerLink='/dashboard'   nzType="link">Dashboard</a></li>
+        </ul>
       </nav>
     </div>
-    </nz-header>
-    <nz-content>
-      <div class="inner-content">Content
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">
       <router-outlet></router-outlet>
       <app-messages></app-messages>
     </div>
-    </nz-content>
-    <nz-footer>Popolamov Evgene By Angular</nz-footer>
-  </nz-layout>
+  </nz-content>
+  <nz-footer>Popolamov Evgene By Angular</nz-footer>
+</nz-layout>
   
 

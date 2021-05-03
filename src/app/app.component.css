@@ -6,40 +6,7 @@ body {
 nz-layout {
   min-height: 100vh;
 }
-/* 
-body,
-input[type="text"],
-button {
-  color: #888;
-  font-family: Cambria, Georgia;
-}
 
-.main {
-  margin: 0 10px;
-}
-h1 {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-  text-align: center;
-}
-h2,
-h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
-
-nav {
-  text-align: center;
-}
-
-nav a {
-  margin: 10px;
-  border-radius: 4px;
-}
-
-/* } */
 .header {
   display: flex;
   justify-content: space-between;
