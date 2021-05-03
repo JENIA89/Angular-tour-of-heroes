@@ -1,9 +1,9 @@
- body {
+body {
   margin: 0;
   padding: 0;
 }
 
-nz-layout{
+nz-layout {
   min-height: 100vh;
 }
 /* 
@@ -40,22 +40,22 @@ nav a {
 }
 
 /* } */
-.header{
+.header {
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
   color: #fff;
-  font-size: 21px;
+  font-size: 25px;
 }
 
-.nav ul li{
+.nav ul li {
   display: inline-block;
   color: #fff;
   font-size: 18px;
 }
-.nav ul li:last-child{
+.nav ul li:last-child {
   padding-left: 15px;
 }
 
